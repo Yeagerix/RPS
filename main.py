@@ -29,25 +29,29 @@ scissors = '''
 
 import random
 
-player_input = input("What do you choose? Type 0 for rock, type 1 for paper, type 2 for scissors ")
+game_images = [rock, paper, scissors]
+
+player_input = input("What do you choose? Type 0 for rock, type 1 for paper, type 2 for scissors.\n")
+
+computer_choice = random.randint(0,2)
 
 if player_input == "0":
-  print(rock)
+  print(f"You chose {rock}")
 elif player_input == "1":
-  print(paper)
+  print(f"You chose {paper}")
 elif player_input == "2":
-  print(scissors)
-else:
-  print("That's Invalid")
+  print(f"You chose {scissors}")
 
 
-rps_computer = ["0","1","2"]
-computer_choice = rps_computer
-print(random.choice(computer_choice))
+if computer_choice == 0:
+  print(f"The computer chose {rock}")
+elif computer_choice == 1:
+  print(f"The computer chose {paper}")
+elif computer_choice == 2:
+  print(f"The computer chose {scissors}")
 
-if computer_choice == "0":
-  print(rock)
-elif computer_choice == "1":
-  print(paper)
-elif computer_choice == "2":
-  print(scissors)
+if computer_choice & player_input == 
+
+
+
+
